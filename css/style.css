@@ -227,6 +227,41 @@ main {
     FOOTER
 ------------------*/
 
+
+footer {
+    background-color: #7C69A4;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer>* {
+    padding-bottom: 15px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+    max-width: calc(100% / 4);
+}
+
+footer ul li a {
+    color: inherit;
+}
+
+
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -299,4 +334,21 @@ main {
     #img-tiramisu {
         max-width: 28%;
     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 30px;
+        text-align: left;
+    }
+
+    footer>* {
+        padding: 0;
+    }
+
+    footer .link {
+        display: flex;
+        align-self: center;
+    }
+
 }
