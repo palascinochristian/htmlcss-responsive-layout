@@ -133,7 +133,7 @@ main {
 .recipe-intro .col-details {
     background-color: #fff;
     /* width: 100%; */
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
 }
 
 
@@ -150,8 +150,44 @@ main {
 }
 
 
+.row.social{
+    margin-top: 25px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
 
+.social strong{
+    font-size: 18px;
+    display: none;
 
+}
+
+.social .btn{
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
+
+}
+
+.fa-facebook{
+    color: #1A77F3;
+}
+
+.fa-twitter{
+    color: #009EFF;
+}
+
+.fa-instagram {
+    color: #DC5285;
+}
+
+.fa-pinterest,
+.fa-youtube {
+    color: #E62222;
+}
 
 
 /*----------------
