@@ -62,7 +62,19 @@ h2 {
     color: #4e3969;
     font-size: 28px;
 }
+.presentation h2{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 
+ article hr {
+    border: 1px solid;
+    color: #F7972E;
+    width: 16%;
+
+}
 
 h3 {
     font-weight: 300;
@@ -149,7 +161,8 @@ main {
 }
 
 .social,
-.banner{
+.banner,
+.presentation{
     margin-top: 40px;
 }
 
@@ -195,6 +208,12 @@ main {
 .banner{
     display: none;
 }
+
+#img-tiramisu{
+    max-width: 70%;
+    margin: 15px auto;
+}
+
 /*----------------
     FOOTER
 ------------------*/
