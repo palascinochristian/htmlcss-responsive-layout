@@ -132,7 +132,6 @@ main {
 .recipe-intro .col-video,
 .recipe-intro .col-details {
     background-color: #fff;
-    /* width: 100%; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
 }
 
@@ -149,15 +148,18 @@ main {
     padding-bottom: 20px;
 }
 
+.social,
+.banner{
+    margin-top: 40px;
+}
 
 .row.social{
-    margin-top: 25px;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
 .social strong{
-    font-size: 18px;
+    font-size: 14px;
     display: none;
 
 }
@@ -169,6 +171,7 @@ main {
     border-radius: 20px;
     padding: 10px 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
+    cursor: pointer;
 
 }
 
@@ -189,7 +192,9 @@ main {
     color: #E62222;
 }
 
-
+.banner{
+    display: none;
+}
 /*----------------
     FOOTER
 ------------------*/
@@ -215,6 +220,16 @@ main {
         padding-bottom: 30px;
     }
 
+    .row.social{
+        gap: 20px;
+    }
+    .social .btn{
+        width: 100%;
+    }
+    
+    .banner{
+        display: block;
+    }
 }
 
 /* from 992 and above*/
@@ -233,5 +248,7 @@ main {
         width: 100%;
     }
 
-
+    .social strong{
+        display: inline;
+    }
 }
