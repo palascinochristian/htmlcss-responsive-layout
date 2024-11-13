@@ -265,10 +265,41 @@ footer ul li a {
 /*----------------
     RESPONSIVE
 ------------------*/
+
+/* from 576px to 768px - Large Mobile */
+@media screen and (min-width: 576px) {
+
+    #img-tiramisu {
+        float: left;
+        margin-right: 10px;
+        max-width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .row.social {
+        gap: 20px;
+    }
+
+    .social .btn {
+        width: 100%;
+
+    }
+
+}
+
 /* from 768px to 992px - Tablet */
 @media screen and (min-width: 768px) {
+
+    main {
+        padding: 40px;
+    }
+
     header {
         text-align: left;
+    }
+
+    .recipe-intro h2 {
+        font-size: 32px;
     }
 
     .recipe-intro h2>span {
@@ -283,10 +314,6 @@ footer ul li a {
     .details p {
         width: calc(100% / 3);
         padding-bottom: 30px;
-    }
-
-    .row.social {
-        gap: 20px;
     }
 
     .social .btn {
@@ -309,8 +336,13 @@ footer ul li a {
     }
 }
 
-/* from 992 and above*/
+/* from 992 and above* - Desktop */
 @media screen and (min-width: 992px) {
+
+    .recipe-intro h2 {
+        font-size: 38px;
+    }
+
     .recipe-intro .col-video {
         width: 70%;
     }
@@ -350,5 +382,4 @@ footer ul li a {
         display: flex;
         align-self: center;
     }
-
 }
