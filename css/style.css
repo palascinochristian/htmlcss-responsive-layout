@@ -58,22 +58,23 @@ h1 {
     font-size: 45px;
     text-shadow: 1px 1px 2px #333;
 }
+
 h2 {
     color: #4e3969;
     font-size: 28px;
 }
-.presentation h2{
+
+.presentation h2 {
     color: #000;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
- article hr {
+article hr {
     border: 1px solid;
     color: #F7972E;
-    width: 16%;
-
+    width: 62px;
 }
 
 h3 {
@@ -82,7 +83,7 @@ h3 {
     color: gray;
 }
 
-.col-details h3{
+.col-details h3 {
     color: #000;
     font-weight: bold;
     font-size: 22px;
@@ -137,7 +138,8 @@ main {
     margin-top: 12px;
     margin-bottom: 12px;
 }
-.recipe-intro h2 > span {
+
+.recipe-intro h2>span {
     display: none;
 }
 
@@ -148,36 +150,37 @@ main {
 }
 
 
-.recipe-intro .col-details{
+.recipe-intro .col-details {
     padding: 20px;
 
 }
+
 .recipe-intro .col-video img {
     width: 100%;
 }
 
-.details >*{
+.details>* {
     padding-bottom: 20px;
 }
 
 .social,
 .banner,
-.presentation{
+.presentation {
     margin-top: 40px;
 }
 
-.row.social{
+.row.social {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.social strong{
+.social strong {
     font-size: 14px;
     display: none;
 
 }
 
-.social .btn{
+.social .btn {
     text-align: center;
     font-size: 14px;
     background-color: #fff;
@@ -188,11 +191,11 @@ main {
 
 }
 
-.fa-facebook{
+.fa-facebook {
     color: #1A77F3;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: #009EFF;
 }
 
@@ -205,13 +208,19 @@ main {
     color: #E62222;
 }
 
-.banner{
+.banner {
     display: none;
 }
 
-#img-tiramisu{
+#img-tiramisu {
+    display: block;
     max-width: 70%;
     margin: 15px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.presentation p {
+    line-height: 2;
 }
 
 /*----------------
@@ -226,28 +235,42 @@ main {
     header {
         text-align: left;
     }
-    .recipe-intro h2 > span {
+
+    .recipe-intro h2>span {
         display: inline;
     }
 
-    .details{
+    .details {
         display: flex;
         flex-wrap: wrap;
     }
-    .details p{
+
+    .details p {
         width: calc(100% / 3);
         padding-bottom: 30px;
     }
 
-    .row.social{
+    .row.social {
         gap: 20px;
     }
-    .social .btn{
+
+    .social .btn {
         width: 100%;
     }
-    
-    .banner{
+
+    .banner {
         display: block;
+    }
+
+    #img-tiramisu {
+        float: left;
+        margin-right: 10px;
+        max-width: 42%;
+        margin-bottom: 0;
+    }
+
+    .presentation p {
+        margin-top: 5px;
     }
 }
 
@@ -256,18 +279,24 @@ main {
     .recipe-intro .col-video {
         width: 70%;
     }
+
     .recipe-intro .col-details {
         width: 30%;
     }
 
-    .details{
+    .details {
         display: block;
     }
-    .details p{
+
+    .details p {
         width: 100%;
     }
 
-    .social strong{
+    .social strong {
         display: inline;
+    }
+
+    #img-tiramisu {
+        max-width: 28%;
     }
 }
