@@ -38,6 +38,7 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
@@ -56,6 +57,24 @@ h1 {
     font-family: "Nerko One", cursive;
     font-size: 45px;
     text-shadow: 1px 1px 2px #333;
+}
+h2 {
+    color: #4e3969;
+    font-size: 28px;
+}
+
+
+h3 {
+    font-weight: 300;
+    font-size: 15px;
+    color: gray;
+}
+
+.col-details h3{
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 40px;
 }
 
 
@@ -102,6 +121,38 @@ main {
     padding: 26px;
 }
 
+.recipe-intro h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.recipe-intro h2 > span {
+    display: none;
+}
+
+.recipe-intro .col-video,
+.recipe-intro .col-details {
+    background-color: #fff;
+    /* width: 100%; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.recipe-intro .col-details{
+    padding: 20px;
+
+}
+.recipe-intro .col-video img {
+    width: 100%;
+}
+
+.details >*{
+    padding-bottom: 20px;
+}
+
+
+
+
+
 
 /*----------------
     FOOTER
@@ -115,9 +166,36 @@ main {
     header {
         text-align: left;
     }
+    .recipe-intro h2 > span {
+        display: inline;
+    }
+
+    .details{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .details p{
+        width: calc(100% / 3);
+        padding-bottom: 30px;
+    }
+
 }
 
 /* from 992 and above*/
 @media screen and (min-width: 992px) {
+    .recipe-intro .col-video {
+        width: 70%;
+    }
+    .recipe-intro .col-details {
+        width: 30%;
+    }
+
+    .details{
+        display: block;
+    }
+    .details p{
+        width: 100%;
+    }
+
 
 }
