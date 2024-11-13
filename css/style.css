@@ -90,26 +90,22 @@ h3 {
     padding-bottom: 40px;
 }
 
+footer h4 {
+    margin-bottom: 10px;
+}
 
 /*----------------
     BUTTONS
 ------------------*/
-.btn {
-    background-color: transparent;
-    font-family: inherit;
-    border: none;
-    padding: 6px 12px;
+
+.social .btn {
+    text-align: center;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
     cursor: pointer;
-}
-
-.btn-large {
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-.btn-primary {
-    background-color: lightcoral;
-    color: #fff;
 }
 
 /*----------------
@@ -180,17 +176,6 @@ main {
 
 }
 
-.social .btn {
-    text-align: center;
-    font-size: 14px;
-    background-color: #fff;
-    border-radius: 20px;
-    padding: 10px 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
-    cursor: pointer;
-
-}
-
 .fa-facebook {
     color: #1A77F3;
 }
@@ -238,11 +223,6 @@ footer {
 
 footer>* {
     padding-bottom: 15px;
-}
-
-footer h4 {
-    margin-bottom: 10px;
-
 }
 
 footer ul {
